@@ -1,51 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>The_Ultimate_Quiz</title>
-</head>
-<body>
-    
-<nav class="nav-wrapper black">
-    <div class="container">
+  </head>
+  <body>
+    <nav class="nav-wrapper black">
+      <div class="container">
         <a href="#index.html" class="logo centre">THE ULTIMATE QUIZ</a>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-<section class="container section">
-    <div class="row">
+    <section class="container section">
+      <div class="row">
         <div class="col s12 16 offset-l3">
-            <form class="myform" name="id" onsubmit="submitted"(event)>
+          <form class="myform" name="id" onsubmit="submitted" (event)>
             <h4 class="centre0align white-text">ENTER YOUR NAME</h4>
 
             <div class="progress yellow">
-                <div class="indeterminate"></div>                          
-
+              <div class="indeterminate"></div>
             </div>
 
             <div class="input_field">
-                <i class="material-icons white-text">account_box</i>
-                <input type="text" class="white-text" id="name">
-                <label for="name">Enter Name</label>
-
-
+              <i class="material-icons white-text">account_box</i>
+              <input type="text" class="white-text" id="name" />
+              <label for="name">Enter Name</label>
+              <p class="center">
+                <button
+                  type="submit"
+                  class="btn blue"
+                  onclick="this.style.display='none'"
+                >
+                  Submit Name
+                </button>
+              </p>
             </div>
-        
-        
-        </form>
+
+            <div>
+              <p class="white-text green">QUIZ RULES :</p>
+              <p class="white-text black">1. ANSWER ALL QUESTIONS :</p>
+              <p class="white-text black">2. TOTAL 100 MARKS :</p>
+              <p class="white-text black">3. NO CHEATING :</p>
+            </div>
+
+            <div class="progress green">
+            <div class="indeterminate"></div>
+          </div>
+
+
+          </form>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+      integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+      crossorigin="anonymous"
+    ></script>
 
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
-</body>
+    <script>
+      function submitted(e) {
+        e.preventDefault();
+        let namee = document.forms["id"]["name"].value;
+        sessionStorage.setItem("name", namee);
+      }
+    </script>
+  </body>
 </html>
