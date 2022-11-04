@@ -31,6 +31,7 @@ function submitted(e) {
         score++
 
     }
+    alert("Your score is:"+score);
    
 
 
