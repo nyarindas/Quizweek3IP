@@ -2,32 +2,31 @@ body{
     background-image: url(images/backgroundgreen.jpg);
     background-position: center;
     background-size: cover;
-    background-color: blanchedalmond;
+    background-color: rgb(36, 35, 33);
     height: 100vh;
 }
 
 .navbar{
-    width: 1200px;
+    width: 1600px;
     height; 75px;
     margin;  align-self: auto;
+    background-color: black;
 
     
 }
 
 .icon{
     width: 200px;
-    float: left;
+    float: right;
     height: 70px;
-    
 }
 
 .logo{
-    color:rgb(241, 151, 15);
+    color:rgb(38, 15, 241);
     Font-size: 40px;
     font-family: Arial;
-    padding-left: 20px;
+    padding-left: 180px;
     float: centre;
     padding-top: 10px;
-
 
 }

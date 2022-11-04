@@ -19,10 +19,9 @@
     <div class="main">
       <div class="navbar">
           <div class="icon"></div>
-              <h2 class="logo">SNN</h2>
-    <div class="navbar black">
-      <div class="container">
-        <a href="#index.html" class="logo centre">THE ULTIMATE QUIZ</a>
+            <nav class="navbar black">
+              <div class="container">
+        <a href="#index.html" class="logo centre">WEB PROGRAMMING SCHOOL<br> ULTIMATE QUIZ</a>
     </div>
       </div>
       </div>
@@ -31,26 +30,18 @@
     <section class="container section">
       <div class="row">
         <div class="col s12 16 offset-l3">
-          <form class="myform" name="id" onsubmit="submitted" (event)>
-            <h4 class="centre0align white-text">ENTER YOUR NAME</h4>
+          <form class="myform" name="id" onsubmit="submitted"(event)>
+            <h4 class="centre0align black-text"><br>ENTER YOUR NAME</h4>
 
             <div class="progress yellow">
               <div class="indeterminate"></div>
             </div>
 
             <div class="input_field">
-              <i class="material-icons white-text">account_box</i>
-              <input type="text" class="white-text" id="name" />
-              <label for="name">Enter Name</label>
-              <p class="center">
-                <button
-                  type="submit"
-                  class="btn blue"
-                  onclick="this.style.display='none'"
-                >
-                  Submit Name
-                </button>
-              </p>
+              <input type="text" class="black-text" id="name">
+              <label for="name">Name here</label><br>
+              <p class="center"><button type="submit" class="button blue"
+                  onclick="this.style.display='none'">Submit Name</button></p>
             </div>
 
             <div>
@@ -66,6 +57,17 @@
 
           <button class="cn">LET'S START!</button>
 
+          <div class="container">
+            <form action="">
+                <label for="question_one"> What is the long form for HTML</label><br>
+                <input type="radio" id="A"> Hypertext Markup Language <br>
+                <input type="radio" id="B"> Hyper Markup Language <br>
+                <input type="radio" id="C"> Hy-text Markup Language <br>
+                <input type="radio" id="D"> Hypertext Markdown Language <br>
+
+
+
+
 
           </form>
         </div>
@@ -78,12 +80,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      function submitted(e) {
-        e.preventDefault();
-        let namee = document.forms["id"]["name"].value;
-        sessionStorage.setItem("name", namee);
-      }
-    </script>
+   
   </body>
 </html>
