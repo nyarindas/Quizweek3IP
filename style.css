@@ -10,7 +10,7 @@ body{
     width: 1600px;
     height; 75px;
     margin;  align-self: auto;
-    background-color: black;
+    background-color: green;
 
     
 }
@@ -22,7 +22,7 @@ body{
 }
 
 .logo{
-    color:rgb(38, 15, 241);
+    color:rgb(190, 185, 233);
     Font-size: 40px;
     font-family: Arial;
     padding-left: 180px;

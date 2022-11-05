@@ -31,15 +31,12 @@ function submitted(e) {
     {
         score++
 
-    }
-
-       
+    }       
           
-        alert("Your score is:"+score);
-    document
+     
+    document.write("Your score is:"+score);
    
   }
 
-  document.querySelector("span.name").innerHTML = user_name;
-  document.querySelector("span.score").innerHTML = user_score;
+
 
