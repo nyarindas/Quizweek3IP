@@ -5,6 +5,11 @@ function submitted(e) {
 
   }
 
+  submitButton.onclick = function(){
+    showResults(fName, lName);
+
+  }
+
   function result(){
     var score=0;
     if (document.getElementById('correct1').checked)
@@ -34,7 +39,7 @@ function submitted(e) {
     }       
           
      
-    document.write("Your score is:"+score);
+    document.write("Well done, Your score is:"+score);
    
   }
 
