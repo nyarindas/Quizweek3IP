@@ -6,7 +6,7 @@ author name
 Sharon Nyarinda
 
 description of project
-Goal
+
 The goal of this week's Independent Project is to help us practice and understand better the concepts covered while learning HTML, CSS, Javascript and JQuery, Bootstrap
 
 User Stories
